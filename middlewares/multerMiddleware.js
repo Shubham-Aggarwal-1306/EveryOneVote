@@ -18,7 +18,7 @@ cloudinary.config({
 const storage = new CloudinaryStorage({
     cloudinary: cloudinary,
     params: {
-        folder: 'swapshop',
+        folder: 'EveryOneVote',
         format: async (req, file) => 'png', // supports promises as well
         public_id: (req, file) => file.filename,
     },

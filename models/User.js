@@ -13,6 +13,15 @@ const userSchema = new moongose.Schema({
         required: [true, 'Please enter your email'],
         unique: [true, 'Email already exists'],
     },
+    aadhar: {
+        type: String,
+        required: [true, 'Please enter your aadhar number'],
+        unique: [true, 'Aadhar number already exists'],
+    },
+    phone: {
+        type: String,
+        required: [true, 'Please enter your phone number'],
+    },
     password: {
         type: String,
         required: [true, 'Please enter your password'],

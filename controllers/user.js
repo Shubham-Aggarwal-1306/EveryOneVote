@@ -2,7 +2,7 @@ const User = require('../models/User');
 const { sendEmail } = require("../middlewares/sendMail")
 exports.createUser = async (req, res) => {
     try {
-        const { name, email, password } = req.body;
+        const { name, email, password, aadhar, phone } = req.body;
 
         let user = await User.findOne({ email });
 
@@ -16,7 +16,9 @@ exports.createUser = async (req, res) => {
         user = await User.create({
             name,
             email,
-            password
+            password,
+            aadhar,
+            phone
         });
 
         const token = user.generateToken();
