@@ -26,31 +26,30 @@ export default function Login() {
           <span className="mb-10 text-green-600 text-sm font-serif font-semibold tracking-widest">to EveryOneVote - Promoting Digitalization</span>
           <div className="md:w-[80%] flex flex-row bg-gray-200 rounded-lg p-3">
             <img src={user} alt="" />
-            <input type="text" placeholder="Username" className="bg-gray-200 ml-5 outline-none text-gray-700" value={name} onChange={(e) => setName(e.target.value)}/>
+            <input type="text" placeholder="Username" className="bg-gray-200 ml-5 outline-none text-gray-700" value={name} onChange={(e) => setName(e.target.value)} />
           </div>
           <div className="md:w-[80%] flex flex-row bg-gray-200 rounded-lg p-3">
-            <img src={emaild} alt="" className="w-[25px] h-[20px] -ml-1 -mb-18"/>
-            <input type="text" placeholder="Email" className="bg-gray-200 ml-5 outline-none text-gray-700" value={email} onChange={(e) => setEmail(e.target.value)}/>
+            <img src={emaild} alt="" className="w-[25px] h-[20px] -ml-1 -mb-18" />
+            <input type="text" placeholder="Email" className="bg-gray-200 ml-5 outline-none text-gray-700" value={email} onChange={(e) => setEmail(e.target.value)} />
           </div>
           <div className="md:w-[80%] flex flex-row bg-gray-200 rounded-lg p-3">
-            <img src={user} alt="" className="w-[25px] h-[20px] -ml-1 -mb-18"/>
-            <input type="text" placeholder="Phone" className="bg-gray-200 ml-5 outline-none text-gray-700" value={phone} onChange={(e) => setPhone(e.target.value)}/>
+            <img src={user} alt="" className="w-[25px] h-[20px] -ml-1 -mb-18" />
+            <input type="text" placeholder="Phone" className="bg-gray-200 ml-5 outline-none text-gray-700" value={phone} onChange={(e) => setPhone(e.target.value)} />
           </div>
           <div className="md:w-[80%] flex flex-row bg-gray-200 rounded-lg p-3">
-            <img src={user} alt="" className="w-[25px] h-[20px] -ml-1 -mb-18"/>
-            <input type="text" placeholder="Aadhar" className="bg-gray-200 ml-5 outline-none text-gray-700" value={aadhar} onChange={(e) => setAadhar(e.target.value)}/>
+            <img src={user} alt="" className="w-[25px] h-[20px] -ml-1 -mb-18" />
+            <input type="text" placeholder="Aadhar" className="bg-gray-200 ml-5 outline-none text-gray-700" value={aadhar} onChange={(e) => setAadhar(e.target.value)} />
           </div>
           <div className="md:w-[80%] flex flex-row bg-gray-200 rounded-lg p-3">
             <img src={pass} alt="" />
-            <input type="text" placeholder="Password" className="bg-gray-200 ml-5  outline-none" value={password} onChange={(e) => setPassword(e.target.value)}/>
+            <input type="text" placeholder="Password" className="bg-gray-200 ml-5  outline-none" value={password} onChange={(e) => setPassword(e.target.value)} />
           </div>
-          
+
           <button className="bg-blue-500 p-3 rounded-2xl hover:bg-blue-300" onClick={submitHandler}>SignUp</button>
         </div>
         <div className="hidden md:block w-[50%]">
           <div className="flex justify-center items-center w-full h-full relative">
-          <img src={login} alt="Logo Unavailable" className="w-[50%] z-20 rounded-lg -ml-20"/>
-          <img src={bg} alt="bg" className="absolute h-full -ml-20 rounded-e-3xl"/>
+            <img src={bg} alt="bg" className="absolute h-full -ml-20 rounded-e-3xl" />
           </div>
         </div>
       </div>
