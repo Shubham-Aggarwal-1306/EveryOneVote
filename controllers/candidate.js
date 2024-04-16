@@ -16,3 +16,19 @@ exports.getAllCandidates = async (req, res) => {
     }
 }
 
+
+exports.addCandidate = async (req, res) => {
+    try {
+        const candidate = await Candidate.create(req.body);
+
+        return res.status(201).json({
+            success: true,
+            candidate,
+        });
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            message: error.message,
+        });
+    }
+}

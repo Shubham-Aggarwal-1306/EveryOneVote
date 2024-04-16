@@ -18,7 +18,12 @@ app.use(cors({
 
 // Import all routes
 const users = require('./routes/user');
+const candidates = require('./routes/candidate');
+const votes = require('./routes/vote');
 
 app.use('/api/v1', users);
+app.use('/api/v1', candidates);
+app.use('/api/v1', votes);
+
 
 module.exports = app;
