@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.route("/register").post(createUser);
 router.route("/login").post(loginUser);
-router.route("/logout").get(isAuthenticated,logoutUser);
+router.route("/logout").get(logoutUser);
 router.route("/update/password").put(isAuthenticated,updatePassword);
 router.route("/update/profile").put(isAuthenticated,updateProfile);
 router.route("/me").get(isAuthenticated, myProfile);

@@ -3,8 +3,6 @@ import login from "/login-photo.jpeg";
 import user from "/user.png";
 import passd from "/pass.png";
 import bg from "/bg.png";
-import logo from "/logo.png";
-import Navbar from "../components/Navbar";
 import { useDispatch, useSelector } from "react-redux";
 import { loginUser } from "../Actions/User";
 
